@@ -2,6 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!-- Define your accent color -->
+
+    <!-- Primary color for the app bar -->
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!-- Darker variant for the status bar and contextual app bars -->
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <!-- Accent color for buttons and other UI elements -->
     <color name="colorAccent">#FF4081</color>
 </resources>
