@@ -31,12 +31,12 @@ The following **additional** features are implemented:
 <!-- Single row of images with names -->
 <div align="center">
   <figure>
-    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/Whishlist_app_1.png" width="200" alt="Image 1">
+    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/Whishlist_appImage_1.png" width="200" alt="Image 1">
     <figcaption> App 1</figcaption>
   </figure>
   
   <figure>
-    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/Whishlist_app_1.png" width="200" alt="Image 3">
+    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/Whishlist_appImage_2.png" width="200" alt="Image 3">
     <figcaption>App 2</figcaption>
   </figure>
 </div>
