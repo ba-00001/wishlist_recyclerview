@@ -17,29 +17,27 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     private val wishlists = mutableListOf<Wishlist>()
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: WishlistAdapter
+    //private lateinit var recyclerView: RecyclerView
+    //private lateinit var adapter: WishlistAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.title = "Wishlist"
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = WishlistAdapter(wishlists)
+        val adapter = WishlistAdapter(wishlists)
         recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(this)
 
-        val submitButton: Button = findViewById(R.id.submitButton)
+        val submitButton = findViewById<Button>(R.id.submitButton)
+
         submitButton.setOnClickListener {
             val name = findViewById<EditText>(R.id.nameTextView).text.toString()
             val price = findViewById<EditText>(R.id.priceTextView).text.toString()
             val url = findViewById<EditText>(R.id.urlTextView).text.toString()
 
-            addItemToWishlist(name, price, url)
+            addItemToWishlist(name, price, url, adapter)
         }
 
         adapter.setOnItemClickListener { item ->
@@ -52,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun addItemToWishlist(name: String, price: String, url: String) {
+    private fun addItemToWishlist(name: String, price: String, url: String, adapter: WishlistAdapter) {
         val priceValue = price.toDoubleOrNull()
 
         if (priceValue != null) {

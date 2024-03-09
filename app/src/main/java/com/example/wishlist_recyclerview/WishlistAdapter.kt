@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 class WishlistAdapter(private val mItems: List<Wishlist>) : RecyclerView.Adapter<WishlistAdapter.ViewHolder>()
 {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val nameTextView: TextView = itemView.findViewById(R.id.nameTextView)
-        val priceTextView: TextView = itemView.findViewById(R.id.priceTextView)
-        val urlTextView: TextView = itemView.findViewById(R.id.urlTextView)
+        val rv_nameTextView: TextView = itemView.findViewById(R.id.result_nameTextView)
+        val  rv_priceTextView: TextView = itemView.findViewById(R.id.result_priceTextView)
+        val  rv_urlTextView: TextView = itemView.findViewById(R.id.result_urlTextView)
     }
 
     private var onItemClickListener: ((Wishlist) -> Unit)? = null
@@ -32,9 +32,9 @@ class WishlistAdapter(private val mItems: List<Wishlist>) : RecyclerView.Adapter
     override fun onBindViewHolder(viewHolder: WishlistAdapter.ViewHolder, position: Int) {
         val item: Wishlist = mItems[position]
 
-        viewHolder.nameTextView.text = item.name
-        viewHolder.priceTextView.text = item.price.toString()
-        viewHolder.urlTextView.text = item.url
+        viewHolder.rv_nameTextView.text = item.name
+        viewHolder. rv_priceTextView.text = item.price.toString()
+        viewHolder. rv_urlTextView.text = item.url
 
 
     }
