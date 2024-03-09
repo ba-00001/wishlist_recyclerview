@@ -10,5 +10,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
 
     <!-- Accent color for buttons and other UI elements -->
+    <color name="colorCharcoal">#364958</color>
+
+    <!-- Accent color for buttons and other UI elements -->
     <color name="colorAccent">#FF4081</color>
 </resources>

@@ -22,7 +22,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
+    <!-- Toolbar for the app -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="399dp"
+        android:layout_height="33dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Wishlist"
+        app:titleTextColor="@android:color/white" />
 
     <!-- Input fields and Submit button -->
 
@@ -42,7 +52,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -58,7 +67,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.935"
-
         app:layout_constraintStart_toStartOf="parent" />
 
 
@@ -78,7 +86,7 @@
         android:id="@+id/submitButton"
         android:layout_width="117dp"
         android:layout_height="53dp"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="Submit"
         app:layout_constraintStart_toEndOf="@+id/urlTextView"
