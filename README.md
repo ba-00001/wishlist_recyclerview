@@ -25,21 +25,18 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
- <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/wishlist_recyclerview_GIF.gif"   width="275px" alt="GIF 1">
+ <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/wishlist_recyclerview_GIF2.gif"   width="275px" alt="GIF 1">
 ## App Preview
 
 <!-- Single row of images with names -->
 <div align="center">
   <figure>
-    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/Whishlist_appImage_1.png" width="200" alt="Image 1">
+    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/wishlist_ANDROID_recyclerview_APPimage1.png" width="200" alt="Image 1">
     <figcaption> App 1</figcaption>
   </figure>
-  
-  <figure>
-    <img src="https://github.com/ba-00001/wishlist_recyclerview/blob/master/Whishlist_appImage_2.png" width="200" alt="Image 3">
-    <figcaption>App 2</figcaption>
-  </figure>
+
 </div>
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif portable
